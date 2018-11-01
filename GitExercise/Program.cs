@@ -21,6 +21,18 @@ namespace GitExercise
 
 
 
+            PrintOutNumber(num);
+
+            Console.ReadLine();
         }
+
+        public static void PrintOutNumber(int x)
+        {
+            for (int i = 0; i <= x; i++)
+            {
+               Console.WriteLine(i); 
+            }
+        }
+
     }
 }
