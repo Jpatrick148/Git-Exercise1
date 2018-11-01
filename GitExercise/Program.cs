@@ -12,7 +12,14 @@ namespace GitExercise
         {
 
             string input = Console.ReadLine();
-            int num = int.Parse(input);
+            int num;
+
+            while (!(int.TryParse(input, out num)))
+            {
+                Console.Write("Input must be a whole number.\nPlease try again: ");
+            }
+
+
 
         }
     }
